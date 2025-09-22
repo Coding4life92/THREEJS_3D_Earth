@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="tailwind.css">
+  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .font-exo {
+      font-family: "Exo 2", sans-serif;
+
+    }
+
+    .font-lato {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex h-screen bg-black">
+    <div class="flex h-screen overflow-hidden">
+      <!-- Left Content -->
+      <div class="w-1/2 flex flex-col justify-center px-10 sm:px-20">
+        <div class="max-w-lg mx-auto">
+          <h1 class="text-4xl sm:text-5xl font-exo mb-6 leading-tight">
+            Earth: Our Only Home
+          </h1>
+          <p class="text-gray-300 text-lg font-lato mb-8">
+            The Earth is a living, breathing planet filled with life, water, and wonder. Here's a look at the key stats
+            that make our planet unique.
+          </p>
+
+          <!-- Earth Stats -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm font-lato text-gray-200">
+            <div>
+              <h3 class="font-exo text-lg text-white">Diameter</h3>
+              <p>12,742 km</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Circumference</h3>
+              <p>40,075 km</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Avg. Temperature</h3>
+              <p>16°C (59°F)</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Water Coverage</h3>
+              <p>71% of surface</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Atmosphere</h3>
+              <p>78% Nitrogen, 21% Oxygen</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Age</h3>
+              <p>4.54 billion years</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Population</h3>
+              <p>~8.1 billion (2025)</p>
+            </div>
+            <div>
+              <h3 class="font-exo text-lg text-white">Distance from Sun</h3>
+              <p>149.6 million km</p>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="mt-10">
+            <a href="#"
+              class="inline-block bg-blue-600 hover:bg-green-600 transition px-6 py-3 rounded-full font-lato text-white text-md shadow-lg">
+              Explore More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-1/2" id="canvasContainer">
+        <canvas></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
