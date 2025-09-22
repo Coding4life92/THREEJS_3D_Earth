@@ -7,7 +7,6 @@ This project renders a realistic, interactive 3D model of Earth using **Three.js
 - Rotating globe with atmosphere glow
 - Starfield backdrop for deep-space effect
 
-
 ---
 
 
@@ -30,3 +29,14 @@ This project renders a realistic, interactive 3D model of Earth using **Three.js
 - **GSAP** – Smooth rotation animation on mouse movement
 - **Vite** – Modern front-end bundler (assumed based on setup)
 - **Tailwind CSS** – Used in surrounding HTML (optional)
+
+### How to run
+
+```bash
+npm run dev
+```
+
+---
+### Preview
+
+<img width="1510" height="759" alt="Screenshot 2025-09-21 at 10 03 58 PM" src="https://github.com/user-attachments/assets/bd42b34a-deee-4e0d-ad03-1c256fda75e1" />
